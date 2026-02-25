@@ -1,0 +1,21 @@
+{
+  "name": "bilibili-batch-follow",
+  "version": "1.0.0",
+  "description": "Batch follow Bilibili creators with one-time manual login.",
+  "main": "index.js",
+  "scripts": {
+    "follow": "node follow.js --max 30",
+    "resolve": "node follow.js --resolve-only --max 30",
+    "dry": "node follow.js --dry-run --max 30",
+    "follow:api": "node follow_api.js --max 30",
+    "follow:api:dry": "node follow_api.js --dry-run --max 30",
+    "unfollow:api": "node unfollow_api.js --targets data/unfollow_not_strict_20260222.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright-core": "^1.58.2"
+  }
+}
