@@ -1,0 +1,21 @@
+# Dependencies and runtime outputs
+node_modules/
+logs/
+
+# Local auth/session secrets
+data/storageState.json
+*.session.json
+*.cookies.json
+
+# Environment secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+.vscode/
+.idea/
